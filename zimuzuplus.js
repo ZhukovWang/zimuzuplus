@@ -3,8 +3,8 @@
 // @namespace		https://lisonfan.com/
 // @icon			https://lisonfan.com/favicon.ico
 // @author			LisonFan
-// @version			0.5
-// @description		给字幕组的字幕下载页面增加一个字幕版本对应的视频文件下载链接，这样描述应该看得懂吧。。。。
+// @version			0.6
+// @description		给字幕组的字幕下载页面增加一个字幕版本对应的视频文件下载链接
 // @match			http://www.zmz2017.com/subtitle/*
 // @grant			none
 // @license			MIT License
