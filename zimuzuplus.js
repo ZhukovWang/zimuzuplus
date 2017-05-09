@@ -5,7 +5,8 @@
 // @author			LisonFan
 // @version			0.6
 // @description		给字幕组的字幕下载页面增加一个字幕版本对应的视频文件下载链接
-// @match			http://www.zmz2017.com/subtitle/*
+// @match			*://www.zmz2017.com/subtitle/*
+// @match			*://www.zimuzu.tv/subtitle/*
 // @grant			none
 // @license			MIT License
 // ==/UserScript==
