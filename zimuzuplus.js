@@ -3,7 +3,7 @@
 // @namespace		https://lisonfan.com/
 // @icon			https://lisonfan.com/favicon.ico
 // @author			LisonFan
-// @version			0.6
+// @version			0.7
 // @description		给字幕组的字幕下载页面增加一个字幕版本对应的视频文件下载链接
 // @match			*://www.zmz2017.com/subtitle/*
 // @match			*://www.zimuzu.tv/subtitle/*
