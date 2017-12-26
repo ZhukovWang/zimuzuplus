@@ -12,17 +12,24 @@
 // ==/UserScript==
 
 (function() {
-    'use strict';
-    var text = document.getElementsByClassName('subtitle-info')[0].innerText;
-    var textGSIndex = text.search("【格式】");
-    var textBBIndex = text.search("【版本】");
-    var text2 = text.substring(textGSIndex,textBBIndex);
-    var text3 = text2.substring(4,textGSIndex);
+	'use strict';
+	var text = document.getElementsByClassName('subtitle-info')[0].innerText;
+	var textGSIndex = text.search("【格式】");
+	var textBBIndex = text.search("【版本】");
+	var text2 = text.substring(textGSIndex,textBBIndex);
+	var text3 = text2.substring(4,textGSIndex);
 	var arr = text3.split(" ");
 	for(var i = 0; i < arr.length; i++){
-	    var urlStr = 'https://rarbg.to/torrents.php?search=' + arr[i];
-	    var url = "<h3>" + "字幕对应视频下载链接：" + "<a href='" + urlStr + "'target='_blank'>" + arr[i] + "</a>" + "</h3>";
-	    var test4 = document.getElementsByClassName('subtitle-links tc')[0].innerHTML;
-	    document.getElementsByClassName('subtitle-links tc')[0].innerHTML = test4 + url;
+		var urlStr1 = 'https://rarbg.to/torrents.php?search=' + arr[i];
+		var url1 = "<h3>" + "字幕原始对应视频下载链接：" + "<a href='" + urlStr1 + "'target='_blank'>" + arr[i] + "</a>" + "</h3>";
+		var test41 = document.getElementsByClassName('subtitle-links tc')[0].innerHTML;
+		document.getElementsByClassName('subtitle-links tc')[0].innerHTML = test41 + url1;
+	}
+    	for(var j = 0; j < arr.length; j++){
+        	arr[j] = arr[j].replace(/720/,"1080");
+	    	var urlStr2 = 'https://rarbg.to/torrents.php?search=' + arr[j];
+	    	var url2 = "<h3>" + "字幕1080p对应视频下载链接：" + "<a href='" + urlStr2 + "'target='_blank'>" + arr[j] + "</a>" + "</h3>";
+	    	var test42 = document.getElementsByClassName('subtitle-links tc')[0].innerHTML;
+	    	document.getElementsByClassName('subtitle-links tc')[0].innerHTML = test42 + url2;
 	}
 })();
