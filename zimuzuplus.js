@@ -6,6 +6,7 @@
 // @version			0.7
 // @description		给字幕组的字幕下载页面增加一个字幕版本对应的视频文件下载链接
 // @match			http*://www.zimuzu.io/subtitle/*
+// @match			http*://www.zmz2019.com/subtitle/*
 // @grant			none
 // @license			MIT License
 // ==/UserScript==
